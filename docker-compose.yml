@@ -5,7 +5,7 @@ services:
     image: mariadb:latest
     env_file: .env
     volumes:
-      - data:/var/lib/mysql
+      - dbdata:/var/lib/mysql
       - ./dev/mariadb:/docker-entrypoint-initdb.d
     ports:
       - "3306:3306"
