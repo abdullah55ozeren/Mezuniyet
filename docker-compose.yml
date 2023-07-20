@@ -4,6 +4,8 @@ services:
   db:
     image: mariadb:latest
     env_file: .env
+    environment:
+      - MYSQL_DATABASE=wordpress
     volumes:
       - dbdata:/var/lib/mysql
       - ./dev/mariadb:/docker-entrypoint-initdb.d
