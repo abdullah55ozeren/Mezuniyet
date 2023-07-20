@@ -4,10 +4,10 @@ services:
   db:
     image: mariadb
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: mydatabase
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: "030119012"
+      MYSQL_DATABASE: "final"
+      MYSQL_USER: "YAM428"
+      MYSQL_PASSWORD: "030119012"
     volumes:
       - data:/var/lib/mysql
       - ./dev/mariadb:/docker-entrypoint-initdb.d
